@@ -19,9 +19,9 @@
 			<section class="content-inner margin-top-no">
 				<div class="ui-card-wrap">
 
-						<div class="col-lg-6 col-md-6">
+						<div class="col-lg-12 col-md-12">
 
-							<div class="card">
+							<!-- <div class="card">
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">系统中最新公告</p>
@@ -32,14 +32,14 @@
 									</div>
 
 								</div>
-							</div>
+							</div> -->
 
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
-										<p class="card-heading">连接信息 以及 All-in-One(快速配置指导)</p>
-										<p>您可以在这里查看您的连接信息。<br>同时，这里为您提供了自动化地配置文件生成，包含了所有 Shadowsocks 服务器的信息，方便您在诸多的服务器中快速添加，快速切换。</p>
-										<nav class="tab-nav margin-top-no">
+										<p class="card-heading">立即开始加速游戏</p>
+										<!-- <p>您可以在这里查看您的连接信息。<br>同时，这里为您提供了自动化地配置文件生成，包含了所有 Shadowsocks 服务器的信息，方便您在诸多的服务器中快速添加，快速切换。</p> -->
+										<!-- <nav class="tab-nav margin-top-no">
 											<ul class="nav nav-list">
 												<li {if $ssr_prefer}class="active"{/if}>
 													<a class="waves-attach" data-toggle="tab" href="#all_ssr"><i class="icon icon-lg">airplanemode_active</i>&nbsp;ShadowsocksR</a>
@@ -48,7 +48,7 @@
 													<a class="waves-attach" data-toggle="tab" href="#all_ss"><i class="icon icon-lg">flight_takeoff</i>&nbsp;Shadowsocks</a>
 												</li>
 											</ul>
-										</nav>
+										</nav> -->
 										<div class="card-inner">
 											<div class="tab-content">
 												<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="all_ssr">
@@ -56,9 +56,9 @@
 
 													<nav class="tab-nav margin-top-no">
 														<ul class="nav nav-list">
-															<li class="active">
+															<!-- <li class="active">
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_info"><i class="icon icon-lg">info_outline</i>&nbsp;连接信息</a>
-															</li>
+															</li> -->
 															<li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_tap"><i class="icon icon-lg">desktop_windows</i>&nbsp;一键游戏加速</a>
 															</li>
@@ -79,7 +79,7 @@
 															</li> -->
 														</ul>
 													</nav>
-													<div class="tab-pane fade active in" id="all_ssr_info">
+													<!-- <div class="tab-pane fade active in" id="all_ssr_info">
 														{$user = URL::getSSRConnectInfo($pre_user)}
 														{$ssr_url_all = URL::getAllUrl($pre_user, 0, 0)}
 														{$ssr_url_all_mu = URL::getAllUrl($pre_user, 1, 0)}
@@ -107,11 +107,10 @@
 
 															<p>请注意，在当前状态下您的 SSR 订阅链接已经失效，您无法通过此种方式导入节点。</p>
 														{/if}
-													</div>
+													</div> -->
 													<div class="tab-pane fade" id="all_ssr_tap">
 														<p><a href="/ssr-download/demo.zip">下载</a>，解压，运行一键游戏加速<br>
-															(1) 输入邮箱，密码，域名即可科学上网<br>
-															(2) 若不能上网，请在设置内检查DNS，切换为阿里云DNS即可<br>
+															输入本站邮箱，密码，并在域名处填写：47.75.50.31 点击登录即可加速游戏<br>
 													</div>
 													<!-- <div class="tab-pane fade" id="all_ssr_windows">
 														<p><a href="/ssr-download/ssr-win.7z">下载</a>，解压，运行程序，然后您有三种方式导入所有节点<br>
