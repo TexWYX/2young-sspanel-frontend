@@ -79,8 +79,8 @@
 														<option></option>
 														<option value="1">微信</option>
 														<option value="2">QQ</option>
-														<option value="3">Google+</option>
-														<option value="4">Telegram</option>
+														<option value="3">手机号码</option>
+														<option value="4">邮箱地址</option>
 													</select>
 												</div>
 											</div>
