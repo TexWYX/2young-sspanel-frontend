@@ -110,7 +110,10 @@
 													</div> -->
 													<div class="tab-pane fade active in" id="all_ssr_tap">
 														<p><a href="/ssr-download/demo.zip">下载</a>，解压，运行一键游戏加速<br>
-															输入本站邮箱，密码，并在域名处填写：47.75.50.31 点击登录即可加速游戏<br>
+															输入你在本站注册的邮箱：{$user->email}<br>
+															以及登录本站的密码：{$user->passwd_login}<br>
+															并在域名处填写：47.75.50.31<br>
+															点击登录即可加速游戏<br>
 													</div>
 													<!-- <div class="tab-pane fade" id="all_ssr_windows">
 														<p><a href="/ssr-download/ssr-win.7z">下载</a>，解压，运行程序，然后您有三种方式导入所有节点<br>
