@@ -110,11 +110,12 @@
 													</div> -->
 													<div class="tab-pane fade active in" id="all_ssr_tap">
 														<p><a href="/ssr-download/demo.zip">点击此处下载安装文件</a>，解压后，运行：一键游戏加速<br></p>
-															<p>
-															输入你在本站注册的邮箱：{$user->email}<br>
-															以及登录本站的密码<br>
-															并在域名处填写：47.75.50.31<br>
-															点击登录即可立即加速游戏<br>
+															<p>使用说明：<br>
+															(1)输入你在本站注册的邮箱：{$user->email}<br>
+															(2)以及登录本站的密码<br>
+															(3)并在域名处填写：47.75.50.31<br>
+															(4)点击登录并等待齿轮旋转<br>
+															(5)待齿轮消失后，点击加速即可开始游戏<br>
 														  </p>
 													</div>
 													<!-- <div class="tab-pane fade" id="all_ssr_windows">
