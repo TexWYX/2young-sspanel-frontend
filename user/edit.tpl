@@ -112,11 +112,11 @@
 										{/if}
 
 										{if $user->im_type==3}
-										Google+
+										手机号码
 										{/if}
 
 										{if $user->im_type==4}
-										Telegram
+										邮件地址
 										{/if}
 
 										{$user->im_value}</p>
@@ -126,8 +126,8 @@
 												<option></option>
 												<option value="1">微信</option>
 												<option value="2">QQ</option>
-												<option value="3">Google+</option>
-												<option value="4">Telegram</option>
+												<option value="3">手机号码</option>
+												<option value="4">邮件地址</option>
 											</select>
 										</div>
 
@@ -226,7 +226,7 @@
 					</div>
 
 
-					<div class="col-lg-6 col-md-6">
+					<div class="col-lg-12 col-md-12">
 
 						<div class="card margin-bottom-no">
 							<div class="card-main">
