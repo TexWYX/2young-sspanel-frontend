@@ -108,7 +108,7 @@
 															<p>请注意，在当前状态下您的 SSR 订阅链接已经失效，您无法通过此种方式导入节点。</p>
 														{/if}
 													</div> -->
-													<div class="tab-pane fade" id="all_ssr_tap">
+													<div class="tab-pane fade active in" id="all_ssr_tap">
 														<p><a href="/ssr-download/demo.zip">下载</a>，解压，运行一键游戏加速<br>
 															输入本站邮箱，密码，并在域名处填写：47.75.50.31 点击登录即可加速游戏<br>
 													</div>
