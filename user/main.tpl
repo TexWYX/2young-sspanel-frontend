@@ -286,11 +286,11 @@
 
 						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_use">使用</a>
 						<ul class="menu-collapse collapse in" id="ui_menu_use">
-							<li>
+							<!-- <li>
 								<a href="/user/node">
 									<i class="icon icon-lg">router</i>&nbsp;节点列表
 								</a>
-							</li>
+							</li> -->
 
 							<!-- <li>
 								<a href="/user/relay">
