@@ -59,8 +59,8 @@
 															<!-- <li class="active">
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_info"><i class="icon icon-lg">info_outline</i>&nbsp;连接信息</a>
 															</li> -->
-															<li>
-																<a class="waves-attach" data-toggle="tab" href="#all_ssr_tap"><i class="icon icon-lg">desktop_windows</i>&nbsp;一键游戏加速</a>
+															<li class="active">
+																<a class="waves-attach" data-toggle="tab" href="#all_ssr_tap"><i class="icon icon-lg">flight_takeoff</i>&nbsp;一键游戏加速</a>
 															</li>
 															<!-- <li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_windows"><i class="icon icon-lg">desktop_windows</i>&nbsp;Windows</a>
@@ -245,14 +245,14 @@
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">帐号使用情况</p>
 										<dl class="dl-horizontal">
-											<p><dt>帐号等级</dt>
-											<dd>{$user->class}</dd></p>
-
+											<!-- <p><dt>帐号等级</dt>
+											<dd>{$user->class}</dd></p> -->
+<!--
 											<p><dt>等级过期时间</dt>
-											<dd>{$user->class_expire}</dd></p>
+											<dd>{$user->class_expire}</dd></p> -->
 
-											<p><dt>帐号过期时间</dt>
-											<dd>{$user->expire_in}</dd>
+											<!-- <p><dt>帐号过期时间</dt>
+											<dd>{$user->expire_in}</dd> -->
 
 											<p><dt>速度限制</dt>
 											{if $user->node_speedlimit!=0}
