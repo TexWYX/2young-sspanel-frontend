@@ -7,15 +7,15 @@
 	<meta name="theme-color" content="#ff9800">
 	<title>{$config["appName"]}</title>
 
-	
-	
+
+
 	<!-- css -->
 	<link href="/theme/material/css/base.min.css" rel="stylesheet">
 	<link href="/theme/material/css/project.min.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
 
-	
+
+
 	<!-- favicon -->
 	<!-- ... -->
 	<style>
@@ -122,10 +122,10 @@
 			background-color:#fff
 		}
 
-		
-		
-		
-		
+
+
+
+
 		.pagination>li>a,
 		.pagination>li>span {
 		  border: 1px solid white;
@@ -134,13 +134,13 @@
 		  background: #f50057;
 		  color: #fff;
 		}
-		
+
 		.pagination>li>a {
 		  background: white;
 		  color: #000;
 		}
-		
-		
+
+
 		.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
 			color: #fff;
 			background-color: #000;
@@ -152,44 +152,44 @@
 		  color: #fff;
 		  border-color: #fff;
 		}
-		
-		
-		
+
+
+
 		.pagination > .disabled > span {
 		  border-color: #fff;
 		}
-		
-		
+
+
 		pre {
 			white-space: pre-wrap;
 			word-wrap: break-word;
 		}
-		
+
 		.progress-green .progress-bar {
 			background-color: #f0231b;
 		}
-		
+
 		.progress-green {
 			background-color: #000;
 		}
-		
+
 		.progress-green .progress-bar {
 			background-color: #ff0a00;
 		}
-		
+
 		.page-orange .ui-content-header {
 			background-image: url(/theme/material/css/images/bg/amber.jpg);
 		}
-		
+
 		.content-heading {
 			font-weight: 300;
 			color: #fff;
 		}
-				
+
 	</style>
-	
-	
-	
+
+
+
 </head>
 <body class="page-orange">
 	<header class="header header-orange header-transparent header-waterfall ui-header">
@@ -200,7 +200,7 @@
 				</a>
 			</div>
 		</ul>
-		
+
 		<ul class="nav nav-list pull-right">
 			<div class="dropdown margin-right">
 				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
@@ -229,7 +229,7 @@
 						</li>
 					</ul>
 				{/if}
-					
+
 			</div>
 		</ul>
 	</header>
@@ -246,32 +246,32 @@
 									<i class="icon icon-lg">recent_actors</i>&nbsp;首页
 								</a>
 							</li>
-							
+
 							<li>
 								<a href="/user/profile">
 									<i class="icon icon-lg">info</i>&nbsp;账户信息
 								</a>
 							</li>
-							
+
 							<li>
 								<a href="/user/edit">
 									<i class="icon icon-lg">sync_problem</i>&nbsp;资料编辑
 								</a>
 							</li>
-							
-							<li>
+
+							<!-- <li>
 								<a href="/user/invite">
 									<i class="icon icon-lg">loyalty</i>&nbsp;邀请码
 								</a>
 							</li>
-							
+
 							<li>
 								<a href="/user/announcement">
 									<i class="icon icon-lg">announcement</i>&nbsp;查看公告
 								</a>
-							</li>
-							
-							
+							</li> -->
+
+
 							{if $config['enable_donate']=='true'}
 							<li>
 								<a href="/user/donate">
@@ -279,11 +279,11 @@
 								</a>
 							</li>
 							{/if}
-							
-							
+
+
 						</ul>
-						
-						
+
+
 						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_use">使用</a>
 						<ul class="menu-collapse collapse in" id="ui_menu_use">
 							<li>
@@ -291,19 +291,19 @@
 									<i class="icon icon-lg">router</i>&nbsp;节点列表
 								</a>
 							</li>
-							
-							<li>
+
+							<!-- <li>
 								<a href="/user/relay">
 									<i class="icon icon-lg">compare_arrows</i>&nbsp;中转规则
 								</a>
-							</li>
-							
+							</li> -->
+
 							<li>
 								<a href="/user/trafficlog">
 									<i class="icon icon-lg">traffic</i>&nbsp;流量记录
 								</a>
 							</li>
-							
+
 							<li>
 								<a href="/user/lookingglass">
 									<i class="icon icon-lg">youtube_searched_for</i>&nbsp;观察窗
@@ -311,13 +311,13 @@
 							</li>
 						</ul>
 
-						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_detect">审计</a>
+						<!-- <a class="waves-attach" data-toggle="collapse" href="#ui_menu_detect">审计</a>
 						<ul class="menu-collapse collapse in" id="ui_menu_detect">
 							<li><a href="/user/detect"><i class="icon icon-lg">account_balance</i>&nbsp;审计规则</a></li>
 							<li><a href="/user/detect/log"><i class="icon icon-lg">assignment_late</i>&nbsp;审计记录</a></li>
-						</ul>
-						
-						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_trade">帮助</a>
+						</ul> -->
+
+						<!-- <a class="waves-attach" data-toggle="collapse" href="#ui_menu_trade">帮助</a>
 						<ul class="menu-collapse collapse in" id="ui_menu_trade">
 							{if $config['enable_wecenter']=='true'}
 							<li>
@@ -326,28 +326,28 @@
 								</a>
 							</li>
 							{/if}
-							
+
 							<li>
 								<a href="/user/ticket">
 									<i class="icon icon-lg">question_answer</i>&nbsp;工单系统
 								</a>
 							</li>
-						</ul>
+						</ul> -->
 
-						
-						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_help">交易</a>
+
+						<!-- <a class="waves-attach" data-toggle="collapse" href="#ui_menu_help">交易</a>
 						<ul class="menu-collapse collapse in" id="ui_menu_help">
-						
-						
+
+
 							<li>
 								<a href="/user/shop">
 									<i class="icon icon-lg">shop</i>&nbsp;商店
 								</a>
 							</li>
-							
+
 							<li><a href="/user/bought"><i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a></li>
-							
-							
+
+
 
 
 							<li>
@@ -355,8 +355,8 @@
 									<i class="icon icon-lg">code</i>&nbsp;充值
 								</a>
 							</li>
-						</ul>
-						
+						</ul> -->
+
 						{if $user->isAdmin()}
 							<li>
 								<a href="/admin">
@@ -366,9 +366,9 @@
 						{/if}
 
 
-						
 
-						
+
+
 					</li>
 				</ul>
 			</div>

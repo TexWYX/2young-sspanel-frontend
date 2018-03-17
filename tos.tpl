@@ -25,17 +25,17 @@
 								<div class="card-main">
 									<div class="card-inner">
 										<p>用户协议 Terms of Service</p>
-										    <p>{$config["appName"]}，以下简称本站。</p>
+										    <p>{$config["appName"]}会员加速器，以下简称本站。</p>
 									</div>
 								</div>
 							</div>
-							
+
 							<h2 class="content-sub-heading">隐私</h2>
-								
+
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-										
+
 											<p>
 												<ul>
 													<li>用户注册时候需要提供邮箱以及密码，并自行保管。邮箱为用户的唯一凭证。</li>
@@ -45,14 +45,14 @@
 									</div>
 								</div>
 							</div>
-							
-							
+
+
 							<h2 class="content-sub-heading">使用条款</h2>
-								
+
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-										
+
 											<p>
 												<ul>
 													<li>禁止使用本站服务进行任何违法恶意活动。</li>
@@ -65,19 +65,19 @@
 									</div>
 								</div>
 							</div>
-							
-							
-							
+
+
+
 							<h2 class="content-sub-heading">其它</h2>
-								
+
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-										
+
 											<p>
 												<ul>
 													<li>本站仅限人类及猫注册使用。</li>
-													<li>TOS更新时用户需要遵守最新TOS。</li>
+													<li>用户协议更新时用户需要遵守最新版本的用户协议。</li>
 											   </ul>
 											</p>
 									</div>
@@ -85,12 +85,12 @@
 							</div>
 
 
-		
-							
+
+
 						</section>
-			
-			
-			
+
+
+
 		</div>
 	</main>
 

@@ -12,7 +12,7 @@
 							<div class="card-main">
 								<div class="card-header">
 									<div class="card-inner">
-										<h1 class="card-heading">和我签订契约，成为魔法少女吧。</h1>
+										<h1 class="card-heading">立即注册，享受凸样会员专属权益</h1>
 									</div>
 								</div>
 								<div class="card-inner">
@@ -21,7 +21,7 @@
 											<img alt="Login" src="/theme/material/images/users/avatar-001.jpg">
 										</span>
 									</p>
-									
+
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
@@ -30,7 +30,7 @@
 												</div>
 											</div>
 										</div>
-										
+
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
@@ -39,7 +39,7 @@
 												</div>
 											</div>
 										</div>
-										
+
 										{if $enable_email_verify == 'true'}
 										<div class="form-group form-group-label">
 											<div class="row">
@@ -51,7 +51,7 @@
 											</div>
 										</div>
 										{/if}
-										
+
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
@@ -60,7 +60,7 @@
 												</div>
 											</div>
 										</div>
-										
+
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
@@ -69,8 +69,8 @@
 												</div>
 											</div>
 										</div>
-										
-										
+
+
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
@@ -85,8 +85,8 @@
 												</div>
 											</div>
 										</div>
-										
-										
+
+
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
@@ -95,9 +95,9 @@
 												</div>
 											</div>
 										</div>
-										
-										
-										
+
+
+
 										{if $enable_invite_code == 'true'}
 											<div class="form-group form-group-label">
 												<div class="row">
@@ -108,7 +108,7 @@
 												</div>
 											</div>
 										{/if}
-										
+
 										{if $geetest_html != null}
 											<div class="form-group form-group-label">
 												<div class="row">
@@ -118,7 +118,7 @@
 												</div>
 											</div>
 										{/if}
-										
+
 										<div class="form-group">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
@@ -126,51 +126,51 @@
 												</div>
 											</div>
 										</div>
-										
+
 										<div class="form-group">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
-													<p>注册即代表同意<a href="/tos">服务条款</a>，以及保证所录入信息的真实性，如有不实信息会导致账号被删除。</p>
+													<p>注册即代表同意<a href="/tos">服务条款</a>，以及保证所录入会员信息的真实性，如有不实会员信息会导致账号被删除。</p>
 												</div>
 											</div>
 										</div>
-									
+
 								</div>
 							</div>
 						</div>
 						<div class="clearfix">
 							<p class="margin-no-top pull-left"><a class="btn btn-flat btn-brand waves-attach" href="/auth/login">已经注册？请登录</a></p>
 						</div>
-						
-						
-						
-								
+
+
+
+
 						{include file='dialog.tpl'}
-						
-						
+
+
 						<div aria-hidden="true" class="modal modal-va-middle fade" id="tos_modal" role="dialog" tabindex="-1">
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-heading">
-										<h2 class="modal-title">注册 TOS</h2>
+										<h2 class="modal-title">用户协议</h2>
 									</div>
 									<div class="modal-inner">
 										{include file='reg_tos.tpl'}
 									</div>
 									<div clUass="modal-footer">
-										<p class="text-right"><button class="btn btn-flat btn-brand-accent waves-attach waves-effect" data-dismiss="modal" type="button" id="cancel">我不服</button><button class="btn btn-flat btn-brand-accent waves-attach waves-effect" data-dismiss="modal" id="reg" type="button">资慈</button></p>
-										
+										<p class="text-right"><button class="btn btn-flat btn-brand-accent waves-attach waves-effect" data-dismiss="modal" type="button" id="cancel">不同意</button><button class="btn btn-flat btn-brand-accent waves-attach waves-effect" data-dismiss="modal" id="reg" type="button">立即注册</button></p>
+
 									</div>
 								</div>
 							</div>
 						</div>
-						
+
 					</section>
 				</div>
 			</div>
 		</div>
 	</main>
-	
+
 {include file='footer.tpl'}
 
 
@@ -178,9 +178,9 @@
 <script>
     $(document).ready(function(){
         function register(){
-			
-			document.getElementById("tos").disabled = true; 
-			
+
+			document.getElementById("tos").disabled = true;
+
             $.ajax({
                 type:"POST",
                 url:"/auth/register",
@@ -207,7 +207,7 @@
                     }else{
                         $("#result").modal();
                         $("#msg").html(data.msg);
-			document.getElementById("tos").disabled = false; 
+			document.getElementById("tos").disabled = false;
 
 			{if $geetest_html != null}
 			captcha.refresh();
@@ -218,7 +218,7 @@
 			$("#msg-error").hide(10);
 			$("#msg-error").show(100);
 			$("#msg-error-p").html("发生错误："+jqXHR.status);
-			document.getElementById("tos").disabled = false; 
+			document.getElementById("tos").disabled = false;
 			{if $geetest_html != null}
 			captcha.refresh();
 			{/if}
@@ -230,24 +230,24 @@
                 $("#tos_modal").modal();
             }
         });
-		
+
 		{if $geetest_html != null}
 		$('div.modal').on('shown.bs.modal', function() {
 			$("div.gt_slider_knob").hide();
 		});
-		
-		
+
+
 		$('div.modal').on('hidden.bs.modal', function() {
 			$("div.gt_slider_knob").show();
 		});
-		
-        
+
+
 		{/if}
-		
+
 		$("#reg").click(function(){
             register();
         });
-		
+
 		$("#tos").click(function(){
 			{if $geetest_html != null}
 			if(typeof validate == 'undefined')
@@ -256,13 +256,13 @@
                 $("#msg").html("请滑动验证码来完成验证。");
 				return;
 			}
-			
+
 			if (!validate) {
 				$("#result").modal();
                 $("#msg").html("请滑动验证码来完成验证。");
 				return;
 			}
-			
+
 			{/if}
             $("#tos_modal").modal();
         });
@@ -275,7 +275,7 @@
 var wait=60;
 function time(o) {
 		if (wait == 0) {
-			o.removeAttr("disabled");			
+			o.removeAttr("disabled");
 			o.text("获取验证码");
 			wait = 60;
 		} else {
@@ -294,7 +294,7 @@ function time(o) {
     $(document).ready(function () {
         $("#email_verify").click(function () {
 			time($("#email_verify"));
-			
+
             $.ajax({
                 type: "POST",
                 url: "send",
@@ -306,7 +306,7 @@ function time(o) {
                     if (data.ret) {
                         $("#result").modal();
 			$("#msg").html(data.msg);
-						
+
                     } else {
                         $("#result").modal();
 			$("#msg").html(data.msg);
@@ -326,17 +326,17 @@ function time(o) {
 <script>
 	var handlerEmbed = function (captchaObj) {
         // 将验证码加到id为captcha的元素里
-		
+
 		captchaObj.onSuccess(function () {
 		    validate = captchaObj.getValidate();
 		});
-		
+
 		captchaObj.appendTo("#embed-captcha");
 
 		captcha = captchaObj;
 		// 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
     };
-	
+
 	initGeetest({
 		gt: "{$geetest_html->gt}",
 		challenge: "{$geetest_html->challenge}",
@@ -346,9 +346,3 @@ function time(o) {
 </script>
 
 {/if}
-
-
-
-
-
-	

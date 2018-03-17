@@ -62,7 +62,7 @@
 															<li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_tap"><i class="icon icon-lg">desktop_windows</i>&nbsp;一键游戏加速</a>
 															</li>
-															<li>
+															<!-- <li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_windows"><i class="icon icon-lg">desktop_windows</i>&nbsp;Windows</a>
 															</li>
 															<li>
@@ -76,7 +76,7 @@
 															</li>
 															<li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_router"><i class="icon icon-lg">router</i>&nbsp;路由器</a>
-															</li>
+															</li> -->
 														</ul>
 													</nav>
 													<div class="tab-pane fade active in" id="all_ssr_info">
@@ -113,11 +113,11 @@
 															(1) 输入邮箱，密码，域名即可科学上网<br>
 															(2) 若不能上网，请在设置内检查DNS，切换为阿里云DNS即可<br>
 													</div>
-													<div class="tab-pane fade" id="all_ssr_windows">
+													<!-- <div class="tab-pane fade" id="all_ssr_windows">
 														<p><a href="/ssr-download/ssr-win.7z">下载</a>，解压，运行程序，然后您有三种方式导入所有节点<br>
-															(1)下载<a href="/user/getpcconf?is_mu=0&is_ss=0">这个（普通端口）</a>或者<a href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，右键小飞机 服务器 -- 从配置文件导入服务器，选择这个文件，<br>
-															(2)点击<a class="copy-text" data-clipboard-text="{$ssr_url_all}">这里（普通端口）</a>或者<a class="copy-text" data-clipboard-text="{$ssr_url_all}">这个(单端口多用户）</a>，然后右键小飞机 -- 从剪贴板复制地址<br>
-															(3)(推荐)右键小飞机--服务器--SSR服务器订阅设置，将订阅地址设置为下面的地址，其他参数留空，确定之后再更新 SSR 服务器订阅。<br>
+															(1)下载<a href="/user/getpcconf?is_mu=0&is_ss=0">这个（普通端口）</a>或者<a href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，右键小飞机 服务器 - 从配置文件导入服务器，选择这个文件，<br>
+															(2)点击<a class="copy-text" data-clipboard-text="{$ssr_url_all}">这里（普通端口）</a>或者<a class="copy-text" data-clipboard-text="{$ssr_url_all}">这个(单端口多用户）</a>，然后右键小飞机 - 从剪贴板复制地址<br>
+															(3)(推荐)右键小飞机-服务器-SSR服务器订阅设置，将订阅地址设置为下面的地址，其他参数留空，确定之后再更新 SSR 服务器订阅。<br>
 															然后选择一个合适的服务器，系统代理模式选”全局模式”，代理规则选“绕过局域网和大陆”，然后即可上网。</p>
 
 														<p>SSR 订阅地址：<br>
@@ -127,28 +127,28 @@
 													</div>
 													<div class="tab-pane fade" id="all_ssr_mac">
 														<p><a href="/ssr-download/ssr-mac.dmg">下载</a>，安装，然后下载<a href="/user/getpcconf?is_mu=0&is_ss=0">这个(普通端口)</a>或者<a  href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，运行程序，小飞机上右键 服务器列表 子菜单 的 “导入服务器配置文件...” 导入这个文件，然后选择一个合适的服务器，更新一下PAC，然后开启系统代理即可上网。</p>
-													</div>
-													<div class="tab-pane fade" id="all_ssr_ios">
+													</div> -->
+													<!-- <div class="tab-pane fade" id="all_ssr_ios">
 														<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>，然后在 Safari 中点击<a href="{$ssr_url_all}">这个（普通端口）</a>或者<a href="{$ssr_url_all_mu}">这个（单端口多用户）</a>，然后点击确定，就可以批量添加节点。</p>
 														<p>SSR 订阅地址：<br>
 															普通端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code><br>
 															单端口多用户端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>
 														</p>
-													</div>
-													<div class="tab-pane fade" id="all_ssr_android">
+													</div> -->
+													<!-- <div class="tab-pane fade" id="all_ssr_android">
 														<p><a href="/ssr-download/ssr-android.apk">下载</a>，安装，然后在手机上默认浏览器中点击<a href="{$ssr_url_all}">这个链接（普通端口）</a>或者<a href="{$ssr_url_all_mu}">这个链接（单端口多用户）</a>，然后点击确定，批量添加完节点，然后路由选择绕过大陆，右上角开启就可以上网了。同时提供一个 ACL 地址，<a href="/link/{$acl_token}">长按复制地址</a>到客户端里应用即可。</p>
 														<p>SSR 订阅地址，您可以在节点列表处添加订阅来自动更新节点：<br>
 															普通端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code><br>
 															单端口多用户端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>
 														</p>
-													</div>
-													<div class="tab-pane fade" id="all_ssr_router">
+													</div> -->
+													<!-- <div class="tab-pane fade" id="all_ssr_router">
 														<p>路由器 刷入<a href="http://www.right.com.cn/forum/thread-161324-1-1.html">这个固件</a>，然后 SSH 登陆路由器，执行以下命令（导入普通端口）<br>
 														<code>wget -O- {$baseUrl}/link/{$router_token}?is_ss=0 | bash && echo -e "\n0 */3 * * * wget -O- {$baseUrl}/link/{$router_token}?is_ss=0 | bash\n">> /etc/storage/cron/crontabs/admin && killall crond && crond </code><br>
 														或者这个单端口多用户的<br>
 														<code>wget -O- {$baseUrl}/link/{$router_token_without_mu}?is_ss=0 | bash && echo -e "\n0 */3 * * * wget -O- {$baseUrl}/link/{$router_token_without_mu}?is_ss=0 | bash\n">> /etc/storage/cron/crontabs/admin && killall crond && crond </code><br>
 														执行完毕以后就可以到路由器的设置面板里随意选择 Shadowsocks 服务器进行连接了。</p>
-													</div>
+													</div> -->
 
 												</div>
 												<div class="tab-pane fade {if !$ssr_prefer}active in{/if}" id="all_ss">
@@ -157,7 +157,7 @@
 															<li class="active">
 																<a class="waves-attach" data-toggle="tab" href="#all_ss_info"><i class="icon icon-lg">info_outline</i>&nbsp;连接信息</a>
 															</li>
-															<li>
+															<!-- <li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ss_windows"><i class="icon icon-lg">desktop_windows</i>&nbsp;Windows</a>
 															</li>
 															<li>
@@ -172,7 +172,7 @@
 															<li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ss_router"><i class="icon icon-lg">router</i>&nbsp;路由器</a>
 															</li>
-														</ul>
+														</ul> -->
 													</nav>
 													<div class="tab-pane fade active in" id="all_ss_info">
 														{$user = URL::getSSConnectInfo($pre_user)}
@@ -217,13 +217,13 @@
 													<div class="tab-pane fade" id="all_ss_android">
 														<p><a href="/ssr-download/ss-android.apk">下载</a>，再<a href="/ssr-download/ss-android-obfs.apk">下载</a>，然后安装，然后在手机上点击<a class="copy-text" data-clipboard-text="{$ss_url_all}">这个链接（普通端口）</a>或者<a class="copy-text" data-clipboard-text="{$ss_url_all_mu}">这个链接（单端口多用户端口）</a>复制到剪贴板，打开 Shadowsocks 客户端，选择从剪贴板导入，然后选择一个节点，设置一下路由为绕过大陆，点击飞机就可以上网了。</p>
 													</div>
-													<div class="tab-pane fade" id="all_ss_router">
+													<!-- <div class="tab-pane fade" id="all_ss_router">
 														<p>路由器 刷入<a href="http://www.right.com.cn/forum/thread-161324-1-1.html">这个固件</a>，然后 SSH 登陆路由器，执行以下命令（导入普通端口）<br>
 														<code>wget -O- {$baseUrl}/link/{$router_token}?is_ss=1 | bash && echo -e "\n0 */3 * * * wget -O- {$baseUrl}/link/{$router_token}?is_ss=1 | bash\n">> /etc/storage/cron/crontabs/admin && killall crond && crond </code><br>
 														或者这个单端口多用户的<br>
 														<code>wget -O- {$baseUrl}/link/{$router_token_without_mu}?is_ss=1 | bash && echo -e "\n0 */3 * * * wget -O- {$baseUrl}/link/{$router_token_without_mu}?is_ss=1 | bash\n">> /etc/storage/cron/crontabs/admin && killall crond && crond </code><br>
 														执行完毕以后就可以到路由器的设置面板里随意选择 Shadowsocks 服务器进行连接了。</p>
-													</div>
+													</div> -->
 												</div>
 											</div>
 										</div>
@@ -261,17 +261,17 @@
 											{else}
 											<dd>不限速</dd>
 											{/if}</p>
-                                          
+
                                             <p><dt>在线设备数量</dt>
 											<dd>{$user->online_ip_count()}</dd></p>
-                                          
+
                                             <p><dt>设备数量限制</dt>
 											{if $user->node_connector!=0}
 											<dd>{$user->node_connector}个</dd>
 											{else}
                                             <dd>不限制</dd>
 											{/if}</p>
-                                          
+
 											<p><dt>上次使用</dt>
 											<dd>{$user->lastSsTime()}</dd></p>
 										</dl>
@@ -337,7 +337,7 @@
 
 
 
-							<div class="card">
+							<!-- <div class="card">
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">续命获取流量</p>
@@ -369,7 +369,7 @@
 									</div>
 
 								</div>
-							</div>
+							</div> -->
 
 
 						{if $enable_duoshuo=='true'}

@@ -11,7 +11,7 @@
 	<link href="/theme/material/css/base.min.css" rel="stylesheet">
 	<link href="/theme/material/css/project.min.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
+
 	<!-- favicon -->
 	<!-- ... -->
 </head>
@@ -24,7 +24,7 @@
 				</a>
 			</li>
 		</ul>
-		
+
 		<ul class="nav nav-list pull-right">
 			<li class="dropdown margin-right">
 				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
@@ -53,7 +53,7 @@
 						</li>
 					</ul>
 				{/if}
-					
+
 			</li>
 		</ul>
 	</header>
@@ -66,10 +66,7 @@
 						<a  href="/"><i class="icon icon-lg">bookmark_border</i>&nbsp;首页</a>
 					</li>
 					<li>
-						<a  href="/tos"><i class="icon icon-lg">text_format</i>&nbsp;TOS</a>
-					</li>
-					<li>
-						<a  href="/code"><i class="icon icon-lg">code</i>&nbsp;邀请码</a>
+						<a  href="/tos"><i class="icon icon-lg">text_format</i>&nbsp;用户协议</a>
 					</li>
 					{if $user->isLogin}
 					<li>
