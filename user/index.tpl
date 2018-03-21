@@ -62,10 +62,10 @@
 															<li class="active">
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_tap"><i class="icon icon-lg">flight_takeoff</i>&nbsp;一键游戏加速</a>
 															</li>
-															<!-- <li>
-																<a class="waves-attach" data-toggle="tab" href="#all_ssr_windows"><i class="icon icon-lg">desktop_windows</i>&nbsp;Windows</a>
-															</li>
 															<li>
+																<a class="waves-attach" data-toggle="tab" href="#all_ssr_windows"><i class="icon icon-lg">info_outline</i>&nbsp;疑难解答</a>
+															</li>
+															<!-- <li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_mac"><i class="icon icon-lg">laptop_mac</i>&nbsp;MacOS</a>
 															</li>
 															<li>
@@ -109,17 +109,17 @@
 														{/if}
 													</div> -->
 													<div class="tab-pane fade active in" id="all_ssr_tap">
-														<p><a href="/ssr-download/demo.zip">点击此处下载安装文件</a>，解压后，运行：一键游戏加速<br></p>
+														<p><a href="/ssr-download/demo.zip">点击此处下载安装文件</a>，解压后，右键以管理员身份运行：一键游戏加速.exe<br></p>
 															<p>使用说明：<br>
-															(1)输入你在本站注册的邮箱：{$user->email}<br>
-															(2)以及登录本站的密码<br>
-															(3)并在域名处填写：http://47.75.50.31 注意：一定要完整填写本链接，否则会出错<br>
-															(4)点击登录并等待齿轮旋转<br>
-															(5)待齿轮消失后，点击加速即可开始游戏<br>
+															(1) 输入你在本站注册的邮箱：<code>{$user->email}</code><br>
+															(2) 以及登录本站的密码<br>
+															(3) 并在域名处填写：<code>http://47.75.50.31</code> 注意：一定要完整填写本链接，否则会出错<br>
+															(4) 点击登录并等待齿轮旋转<br>
+															(5) 待齿轮消失后，点击加速即可开始游戏<br>
 														  </p>
 													</div>
-													<!-- <div class="tab-pane fade" id="all_ssr_windows">
-														<p><a href="/ssr-download/ssr-win.7z">下载</a>，解压，运行程序，然后您有三种方式导入所有节点<br>
+													<div class="tab-pane fade" id="all_ssr_windows">
+														<!-- <p><a href="/ssr-download/ssr-win.7z">下载</a>，解压，运行程序，然后您有三种方式导入所有节点<br>
 															(1)下载<a href="/user/getpcconf?is_mu=0&is_ss=0">这个（普通端口）</a>或者<a href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，右键小飞机 服务器 - 从配置文件导入服务器，选择这个文件，<br>
 															(2)点击<a class="copy-text" data-clipboard-text="{$ssr_url_all}">这里（普通端口）</a>或者<a class="copy-text" data-clipboard-text="{$ssr_url_all}">这个(单端口多用户）</a>，然后右键小飞机 - 从剪贴板复制地址<br>
 															(3)(推荐)右键小飞机-服务器-SSR服务器订阅设置，将订阅地址设置为下面的地址，其他参数留空，确定之后再更新 SSR 服务器订阅。<br>
@@ -128,9 +128,28 @@
 														<p>SSR 订阅地址：<br>
 															普通端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code><br>
 															单端口多用户端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>
-														</p>
+														</p> -->
+													<p>
+														(1) 为什么杀毒软件会提示有风险?<br>
+														请完全关闭杀毒软件运行加速器，国产杀毒软件会误判加速器为恶意软件。<br>
+													</p>
+													<p>
+														(2) 为什么我连接失败了？<br>
+														有可能是您的会员到期了或系统正在维护，若您的会员到期，希望继续使用加速器请联系管理员<br>
+													<p>
+														(3) 我看到加速器中有其他游戏，是否可以加速？<br>
+														您可以自由选择加速器内的功能，但是我们的加速节点是仅为绝地求生优化的。若其他游戏的加速出现异常，则您可能无法加速该游戏<br>
+													</p>
+													<p>
+														(4) 为什么我加速起来效果很差，甚至比不开加速器还要卡？<br>
+														我们目前正在收集用户反馈，某些地区的网络运营商会屏蔽掉我们使用的协议（如：校园网），如果您遇到这样的情况，请联系管理员并向我们提供您的网络位置和网络供应商名称<br>
+													</p>
+													<p>
+														(5) 其他异常情况处理<br>
+														请您确保在使用加速器前关闭杀毒软件和其他加速器（例如：网易 UU），若仍有问题，请联系管理员获得帮助<br>
+													</p>
 													</div>
-													<div class="tab-pane fade" id="all_ssr_mac">
+													<!-- <div class="tab-pane fade" id="all_ssr_mac">
 														<p><a href="/ssr-download/ssr-mac.dmg">下载</a>，安装，然后下载<a href="/user/getpcconf?is_mu=0&is_ss=0">这个(普通端口)</a>或者<a  href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，运行程序，小飞机上右键 服务器列表 子菜单 的 “导入服务器配置文件...” 导入这个文件，然后选择一个合适的服务器，更新一下PAC，然后开启系统代理即可上网。</p>
 													</div> -->
 													<!-- <div class="tab-pane fade" id="all_ssr_ios">
